@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Vezba</title>
+    </head>
+    
+    <body>
+
+        <script>
+            
+            function details (){
+                document.write (' Name: ' +this.name+ ' HP ' +this.health+ ' AT ' +this.attack+ ' SPD ' +this.speed+ '<br>');
+            }
+            function war (player1, player2){
+                alert(player1.health - player2.attack);
+            }
+            
+            var tenk = {
+                name: "Russian",
+                health: 560,
+                attack: 70,
+                speed: 250,
+                info: details,
+                war: war
+            }
+                
+            var tenk2 = {
+                name: "American",
+                health: 460,
+                attack: 85,
+                speed: 220,
+                info: details,
+                war: war
+            }
+            
+            
+            war (tenk, tenk2);
+            
+        </script>
+        
+    </body>
+
+</html>
